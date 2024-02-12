@@ -1,5 +1,6 @@
 
 -- EXERCISE 1
+-- The first step towards designing a database schema is to create tables with the appropriate columns and primary keys.
 create table restaurant (
   id integer PRIMARY KEY,
   name varchar(20),
@@ -10,6 +11,7 @@ create table restaurant (
 );
 
 -- EXERCISE 2
+-- In script.sql, assign a primary key to a column for each of the tables, restaurant and address. Then, write queries to validate that these primary keys exist for these tables.
 create table address(
   id integer PRIMARY KEY,
   street_number varchar(10),
@@ -22,12 +24,15 @@ create table address(
 
 
 -- EXERCISE 3
+-- In script.sql, create a category table. Check the hint for how to do this.
 create table category (
   id char(2) PRIMARY KEY,
   name varchar(20),
   description varchar(200)
 );
 
+-- EXERCISE 4
+-- In script.sql, create a dish table. Check the hint to see how to create the dish table.
 create table dish (
   id integer PRIMARY KEY,
   name varchar(50),
@@ -35,6 +40,8 @@ create table dish (
   hot_and_spicy boolean
 );
 
+-- EXERCISE 5
+-- In script.sql, create a review table with columns that make sense. Check the hint for how to create this table.
 create table review (
   id integer PRIMARY KEY,
   rating decimal,
